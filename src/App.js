@@ -3,6 +3,7 @@ import Timer from './components/Timer';
 import CustomUseCallback from "./components/CustomUseCallback";
 import CheckRerender from "./components/CheckRerender";
 import FetchingData from "./components/FetchingData";
+import LocalStorage from "./components/LocalStorage";
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <CustomUseCallback />
             <CheckRerender />
             <FetchingData />
+            <LocalStorage />
         </div>
     );
 }
