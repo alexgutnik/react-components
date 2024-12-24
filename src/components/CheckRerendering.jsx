@@ -1,6 +1,6 @@
 import React, { memo, useEffect, useState } from 'react';
 
-const CheckRerender = () => {
+const CheckRerendering = () => {
     console.log('CheckRerender render');
 
     const [value, setValue] = useState(0);
@@ -53,4 +53,4 @@ const SubComponentWithoutLogic = memo(() => {
     );
 });
 
-export default CheckRerender;
+export default CheckRerendering;
