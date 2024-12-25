@@ -7,7 +7,7 @@ import LocalStorage from "./components/LocalStorage";
 
 function App() {
     return (
-        <div className="App container mx-auto text-center">
+        <div className="App container mx-auto text-center px-4">
             <Timer />
             <CustomUseCallback />
             <CheckRerendering />
