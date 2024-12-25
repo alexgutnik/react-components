@@ -12,10 +12,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "prestart": "npm run start:tailwind",
     "start:tailwind": "npx tailwindcss -i ./src/index.css -o ./public/styles.css --watch",
     "start:react": "react-scripts start",
-    "start": "npm run start:tailwind && npm run start:react",
+    "start": "echo \"Starting server\" && concurrently \"npm run start:tailwind\" \"npm run start:react\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^9.1.0",
     "tailwindcss": "^3.4.17"
   }
 }
